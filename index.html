@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey Potti! I think this is the last Letter that i am gonna send you....
+        <br>
+        So please read it carefully my first love 
+      </h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="500"
+          width="500"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width=300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          I want this letter to be short and sweet. Thanks potti for coming into my life. 
+          You are the first person that i ever loved. Edi cheppali ani ledu kani tappataledu
+          i cant see you as a frnd and you cant see me as lover. You said i cant be in relation 
+          with you in future ani koda so sorry to say this naku inka netho matladi naa feelings
+          ni hurt chesukolenu. Nuvvu adi ardam chesukoni naa life loki vastav ante you are always 
+          welcome but make sure that yopu will be in relaton with me at that time neku time kavali 
+          think chasi chepta ante tesuko time kani appudu varaku i cant be normal and chat with 
+          SORRY POTTI NENU ELA CHEPPTUNA ANI BUT EM CHEYALENU. Nuvvu eni chasina i will forgive you
+          enduku ante nuvvu ante naku antha istam i dont want to lose you  
+          but adi koda oka limit varaku eh ippudu varaku aa limit close avvaledu so i want you back 
+          I LOVE YOU AND MISS YOU AND THOSE BOOBIES. .Waiting for you reply.Either YES OR NO.
+          <a href="new.html">Click Here</a>
+          
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
